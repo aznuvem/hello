@@ -1,0 +1,30 @@
+{
+    "name": "aznuvem/hello",
+    "description": "AZ NUVEM Hello",
+    "keywords": ["hello"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Petry",
+            "homepage": "https://www.linkedin.com/in/fernandopetry",
+            "email": "hub@nando.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AzNuvem\\Hello\\": "src/"
+        },
+        "files": [
+            "src/functions_include.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": { "React\\Tests\\Async\\": "tests/" }
+    }
+}
